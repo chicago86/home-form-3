@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pay</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="ba-form-bg">
+      <div class="ba-container">
+        <div class="ba-form-contant">
+          <div class="ba-form-heder">
+            <div class="logo-info">
+              <h3 class="logo-info__name">Harold Finch</h3>
+              <p class="logo-info__paragraph">Your Total</p>
+            </div>
+            <!-- /.logo-ingo -->
+            <div class="price">
+              $88
+            </div>
+            <!-- /.price -->
+          </div>
+          <!-- /.ba-form-heder -->
+          <form class="ba-form" action="#" method="POST">
+			  <div class="ba-item">
+				  <legend>Credit card number</legend>
+	  			<input class="col-100" type="text" name="card_nmber" placeholder="Card Number" maxlength="16" />
+			  </div>
+			<div class="ba-item">
+				<legend>Expiration date</legend>
+	            <input class="col-60" list="month" placeholder="Month" />
+	            <datalist id="month">
+	              <option value="January"> </option>
+	              <option value="February"> </option>
+	              <option value="March"> </option>
+	              <option value="April"> </option>
+	              <option value="May"> </option>
+	            </datalist>
+	            <input class="col-30" list="year" placeholder="Year" />
+	            <datalist id="year">
+	              <option value="2018"> </option>
+	              <option value="2019"> </option>
+	              <option value="2020"> </option>
+	              <option value="2021"> </option>
+	              <option value="2022"> </option>
+				</datalist>
+			</div>
+			<ba-item>
+				<legend>CVV</legend>
+				<div class="ba-ccv">
+					<input class="col-30 marg--r" type="password" name="password" maxlength="3">
+					
+						<p class="ba-ccv-text">3 or 4 digits - view example</p>
+				
+				</div>
+			</ba-item>
+			<hr>
+			<div class="ba-button">Pay</div>
+			<!-- /.ba-button -->
+			<div class="text-footer ba-text-center"><p class="text-footer--last">
+				Cancel order
+			</p>
+		<hr></div>
+          </form>
+        </div>
+        <!-- /.ba-form-contant -->
+      </div>
+    </section>
+    <!-- /.ba-form-bg -->
+    <!-- /.ba-container -->
+  </body>
+</html>
